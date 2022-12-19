@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery - Bernardo M. D.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="title" style="text-align: center; margin-right:40px">
+        <h2><b>A Biblioteca jQuery<b></b></h2>
+        <h3 style="margin:0;">Write less, do more</h3>
+      </div>
+      <div class="row">
+        <div id="menu" class="col-xs-1">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="abas active">
+              <a data-toggle="pill" href="#home">O que é jQuery?</a>
+            </li>
+            <li class="abas"><a data-toggle="pill" href="#menu1">Detalhes</a></li>
+            <li class="abas"><a data-toggle="pill" href="#menu2">Referências</a></li>
+            <li class="abas">
+              <a data-toggle="pill" href="#exemplo">Exemplo Prático</a>
+            </li>
+            <li class="abas">
+              <a data-toggle="pill" href="#menu3">Formulário</a>
+            </li>
+          </ul>
+          <!-- Criei a classe 'abas' para estilizar a seleção das abas do site-->
+        </div>
+        <div class="col-xs-9">
+          <div class="tab-content" id="app">
+            <div id="home" class="tab-pane fade in active divStyle">
+                <h2 class="contentTitle" ><b>jQuery é: </b></h2>
+              
+              <div class="content">
+                <ul>
+                  <li>Uma biblioteca JavaScript</li><br>
+                  <li>Rápida, pequena e rica em recursos</li><br>
+                  <li>Facilita o uso de javascript e de funcionalidades dinâmicas de páginas</li><br>
+                  <li>Versátil: API fácil de usar e funciona em vários navegadores</li><br>
+                  <li>Provavelmente a biblioteca mais extensível e mais utilizada</li><br>
+                </ul>
+                <h4><i>Jquery mudou a maneira como milhões de pessoas escrevem JavaScript</i></h4>   
+            </div>
+          </div>
+
+            <div id="menu3" class="tab-pane fade divStyle">
+              <div class="form2">
+                <h2 style="text-align:center">Formulário para contato</h2>
+                <form action="get">
+                  
+
+                  <div class="formcontrol">
+                    <label for="nome">Nome completo:</label>
+                    <input style="float: right" id="nome" type="text"  placeholder="Seu nome..."/>
+                  </div>
+
+                  <div class="formcontrol">
+                    <label for="cpf">CPF:</label>
+                    <input style="float: right" id="cpf" type="number" placeholder="N° de 11 dígitos"/>
+                  </div>
+
+                  <div class="formcontrol">
+                    <label for="endereco">Endereço:</label>
+                    <input style="float: right" id="endereco" type="text" placeholder="Rua, N°/apto, Cid., Estado " />
+                  </div>
+
+                  <div class="formcontrol">
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input style="float: right" id="telefone" type="number" placeholder="N° de 11 dígitos" />
+                  </div>
+
+                  <div class="formcontrol">
+                    <label for="msg">Mensagem:</label>                    
+                    <textarea style="float: right; margin-right: 2px; margin-bottom: 10px;" placeholder="Sua mensagem..." id="msg" rows="3" cols="22"></textarea>
+                  </div>
+
+                  <div>
+                    <input id="btn" type="button" value="Enviar" />
+                  </div>
+                </form>
+              </div>
+              <script src="./scriptForm.js"></script>
+
+            </div>
+
+            <div id="menu2" class="tab-pane fade divStyle">
+              <h2 class="contentTitle" ><b>Referências:</b></h2>
+              <div class="content">
+                <ul>
+                  <li><a href="https://jquery.com" target="_blank">Site do jQuery 1</a></li>
+                  <li><a href="https://jquery.org" target="_blank">Site do jQuery 2</a></li>
+                  <li><a href="https://www.w3schools.com/jquery/jquery_intro.asp" target="_blank">W3Schools</a></li>
+                  <li><a href="https://www.devmedia.com.br/jquery-tutorial/27299" target="_blank">DevMedia</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="menu1" class="tab-pane fade divStyle">
+              <h2 class="contentTitle" ><b>Detalhes:</b></h2>
+              <div class="content">
+                <h3><b>Principal finalidade:</b></h3>
+                <p>Facilitar o uso do JavaScript e suas funcionalidades, simplificando muitas tarefas complexas como calls do AJAX, animações e manipulação de DOM.</p>
+                <p>O jQuery pega muitas tarefas comuns que requerem muitas linhas de código JavaScript para serem realizadas e as agrupa em métodos que você pode chamar com uma única linha de código. Por exemplo, no exemplo apresentado neste site, o jQuery facilita a manipulação de eventos e operações a partir do click nos botões da calculadora.</p>
+                <h3><b>Principais funcionalidades:</b></h3>
+                <ul>
+                  <li>Manipulação de CSS</li>
+                  <li>Métodos de evento HTML</li>
+                  <li>Efeitos/Animações</li>
+                  <li>AJAX</li>
+                  <li>Utilidades</li>
+                </ul>
+                <h3><b>Pré-requisitos:</b></h3>
+                <h4 style="text-decoration:underline">Para utilizar o Jquery temos 2 opções:</h4>
+                <p>Baixar a biblioteca do site jquery.com</p>
+                <p>Incluir o jQuery no documento a partir de uma rede de distribuição de conteúdo, como o google</p>
+                <p>Para fazer uma melhor utilização do jquery é necessário conhecimento previo de HTML/CSS e JavaScript</p>
+                <h3><b>Licença de uso:</b></h3>
+                <p>Em códigos fonte, a licença é a MIT. Ela afirma que você é livre para usar o jQuery em qualquer projeto, desde que faça referência e o cabeçalho de copyright seja deixado intacto. As demonstrações e exemplos, como por exemplo em sites de repositórios, são liberadas sob o termo da licença especificada no repositório, como a licença CC0, que é ainda mais permissiva do que a licença do MIT, permitindo que você use o código da maneira que desejar, sem cabeçalhos de direitos autorais, avisos ou outra atribuição. </p>
+
+              </div>
+              
+            </div>
+            <!--Classe 'divStyle' para modificar os conteúdos de cada aba(ex. cor do texto)
+                        A seguir, div da Calculadora(código html + referência externa de script JS)-->
+            <div id="exemplo" class="tab-pane fade divStyle">
+              <h2 id="h2Calc">
+                <span style="font-weight: bolder"
+                  >Calculadora de uma operação</span
+                >
+                usando Jquery
+              </h2>
+              <div class="form">
+                <div class="formcontrol">
+                  <input
+                    class="visor"
+                    type="text"
+                    value=""
+                    id="inputTexto"
+                    style="width: 106px"
+                    readonly
+                  />
+                </div>
+                <div class="formcontrol">
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="7"
+                    id="btn7"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="8"
+                    id="btn8"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="9"
+                    id="btn9"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="+"
+                    id="btnSoma"
+                  />
+                </div>
+                <div class="formcontrol">
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="4"
+                    id="btn4"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="5"
+                    id="btn5"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="6"
+                    id="btn6"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="-"
+                    id="btnSubtracao"
+                  />
+                </div>
+
+                <div class="formcontrol">
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="1"
+                    id="btn1"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="2"
+                    id="btn2"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="3"
+                    id="btn3"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="/"
+                    id="btnDivisao"
+                  />
+                </div>
+
+                <div class="formcontrol">
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="0"
+                    id="btn0"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="."
+                    id="btnFloat"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="C"
+                    id="btnReset"
+                    style="padding-left: 7px"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="*"
+                    id="btnMultiplicacao"
+                  />
+                </div>
+
+                <div class="formcontrol">
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="√"
+                    id="btnSqrt"
+                  />
+                  <input
+                    type="button"
+                    class="buttonclass"
+                    value="="
+                    id="btnIgual"
+                  />
+                </div>
+
+                <script src="./scriptCalculadora.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

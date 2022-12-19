@@ -1,0 +1,119 @@
+/*Estilização da calculadora*/
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  margin-right: 41.5%;
+  margin-left: 41.5%;
+  background-color:  rgba(30, 74, 162, 0.848);
+  border-radius: 10px;
+}
+
+.formcontrol {
+  margin: 5px;
+}
+
+.buttonclass {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 23.5px;
+  font-weight: bold;
+
+  background-color: #a3ac92a6;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.235);
+}
+
+#btnIgual{
+  width:79px;
+}
+
+.visor {
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: rgba(175, 48, 48, 0.6);
+}
+
+#h2Calc {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Estilização do documento
+  Primeiramente, estilização de formulário: */
+ 
+body {
+  background-color: #89b5c6a1;
+}
+
+#title {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+}
+.form2 {
+  margin-top: 4%;
+  margin-right: 30.5%;
+  margin-left: 30.5%;
+  background-color: rgba(83, 112, 171, 0.848);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+#btn {
+  margin-left: 255px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+label {
+  margin-left: 15px;
+}
+.contentTitle{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+p{
+  text-indent: 15px;
+  font-weight:500;
+}
+/*Abaixo, respectivamente: 1 classe + o IDselector de 'menu' para organizar o container das abas, 
+                              'a' e a classe 'abas' modificam o design das abas,
+                              'divStyle' modifica o conteúdo propriamente dito - corpo mostrado ao selecionar a aba(ex. texto do site)
+     */
+.col-xs-1 {
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+}
+
+#menu {
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 35px;
+}
+
+.abas {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+a {
+  color: #5da4bd;
+}
+
+.divStyle {
+  color: rgba(0, 0, 0, 0.85);
+}
