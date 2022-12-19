@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!-- 5) Implemente um imput em HTML para cada item da lista abaixo -->
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>CPW - Exercício 5</title>
+    </head> 
+   
+    <h3>Campos para formulários:</h3>
+    <body>
+
+        <ul>            
+
+            <li><b>type:</b> password</li>    
+            <label for="file">file: </label>   
+            <input id="file" type="password" name="file">
+            <hr>     
+
+            <li><b>type:</b> checkbox</li>
+            <label for="checkbox">Checkbox: </label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <hr>
+
+            <li><b>type:</b> radio</li>
+            <legend>Nesse input, todos os itens tem o mesmo nome. É usado para radio groups onde, por exemplo são itens do mesmo grupo.<br>Escolha uma fruta:</legend>
+            
+            <input type="radio" name="fruta" id= "maçã">
+            <label for="maçã">Maçã</label>
+            
+            <input type="radio" name="fruta" id= "manga">
+            <label for="manga">Manga</label>
+            <hr>
+            
+
+            <li><b>type:</b> datetime-local</li>
+            <label for="datetime">Escolha um dia e horário: </label>
+            <input id="datetime" type="datetime-local" 
+            min="2018-06-07T00:00" max="2025-06-14T00:00">>
+            <hr>
+
+            <li><b>type:</b> email (parece um texto, mas tem requisitos)</li>
+            <label for="email">Email: </label>   
+            <input id="email" type="email" name="Email">
+            <hr>
+
+            <li><b>type:</b> file (pode usar o atributo accept)</li>
+            <label for="file">File: </label>   
+            <input id="file" type="file" name="file" accept="image\png, image\jpg">
+            <hr>
+
+            <li><b>type:</b> hidden</li>
+            <hr>
+
+            <li><b>type:</b> image</li>
+            <label for="image">Imagem:</label>
+            <input id="image" type="image" src="./imagens/bike.jpg" weight="200" height="30" name="image">
+            <hr>
+
+            <li><b>type:</b> button</li>
+            <input id="button" type="button" name="button" value="Botão">
+            <hr>
+
+            <li><b>type:</b> range</li>
+            <input type="range" id="range" min="0" max="10">
+
+        </ul>
+
+    </body>
+
+</html>

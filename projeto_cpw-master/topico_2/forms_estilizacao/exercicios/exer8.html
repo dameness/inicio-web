@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <!--8) Códifique uma página em HTML contendo cabeçalho, corpo e rodapé. 
+        No cabeçalho defina um título. No corpo um formulário que deverá ter 
+        no mínimo cinco campos para preenchimento (text, checkbox, select, etc.) 
+        e um botão. Agrupe os conjuntos label+input em um div.
+        Para a estilização, organize os estilos em classes, através da tag style no cabeçalho da página.
+        Com base no conceito de boxmodel, para cada div do formulário, defina uma margem de 15 px,
+        largura de 100% da página, altura de 30px, sem efeito de borda, espaçamento  entre a borda e o conteúdo de 5px,
+        cor de fundo verde claro e cor de letra vermelho.
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>Learning Box-model</title>
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <style>
+            
+            div.boxmodel1 {
+                margin:15px;
+                width:100%;
+                height:30px;
+                border: 2px;
+                border-style: solid;
+                border-color:black;
+                padding: 5px;
+                background-color: rgba(0,0,0,0.25);
+                color:red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <h2 class="tipo1">Formulário CSS: Box Model</h2>
+        
+        <form id="form" action="#" method="post">
+            
+            <div id="div1" class="boxmodel1">
+                <label for="nome">Nome completo: </label>
+                <input id="nome" type="text" name="nome">
+            </div>
+
+            <div id="div2" class="boxmodel1">
+                <label for="data">Data e hora de nascimento: </label>
+                <input id="data" type="datetime-local" name="data">
+            </div>
+
+            <div id="div3" class="boxmodel1">
+                <label for="select1">Qual a sua altura? </label>
+                <select id="select1" name="altura">
+                    <option value="">--Escolha uma opção--</option>
+                    <option value="150-">Menos de 1,50m</option>
+                    <option value="150">1,50m - 1,59m</option>
+                    <option value="160">1,60m - 1,69m</option>
+                    <option value="170">1,70m - 1,79m</option>
+                    <option value="180">1,80m - 1,89m</option>
+                    <option value="190">1,90m ou mais</option>
+                </select>
+            </div>
+            <div id="div4" class="boxmodel1">
+                <label for="select2">Qual seu peso? </label>
+                <select id="select2" name="peso">
+                    <option value="">--Escolha uma opção--</option>
+                    <option value="50-">Menos de 50kg</option>
+                    <option value="50">50kg - 59kg</option>
+                    <option value="60">60kg - 69kg</option>
+                    <option value="70">70kg - 79kg</option>
+                    <option value="80">80kg - 89kg</option>
+                    <option value="90">90kg ou mais</option>
+                </select>
+            </div>
+            <div id="div5" class="boxmodel1">
+                <label for="check">Você preencheu o formulário completo?</label>
+                <input id="check" type="checkbox" name="check">
+            </div>
+        </form>
+    </div>
+
+    </body>
+    <footer>
+        <p class="divstyle2">Obrigado por responder!</p>
+    </footer>
+</html>
+

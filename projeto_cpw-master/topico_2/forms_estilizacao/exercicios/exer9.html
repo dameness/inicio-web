@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <!--9) Códifique uma página em HTML contendo cabeçalho, corpo e rodapé. 
+        No cabeçalho defina um título. No corpo um formulário que deverá ter 
+        no mínimo dez campos para preenchimento (text, checkbox, select, etc.) agrupados em dois blocos (lado a lado).
+        Na parte inferior, deverá ter um botão (Enviar), que ao ser clicado deverá exibir uma mensagem.        
+        Para a estilização, organize os estilos em classes, armazenadas no arquivo ../css/estilos.css.
+
+        Com base no conceito de boxmodel, cada bloco deve ocupar 35% da largura disponível da página.
+        Margem de 10px. Altura variável, borda pontilhada de 1px de cor azul forte e cor de fundo azul claro. 
+        Os dois blocos devem estar na mesma altura (float: left)
+
+        Para as divs localizadas dentros dos blocos, margem de 5px, espaçamento  entre a borda e o conteúdo de 5px, 
+        altura e largura variável. Não aplique cor de fundo.
+        
+        O botão de enviar deve estar localizado abaixo dos dois blocos (segunda linha, em novo fluxo. portanto, "clear: both"), 
+        ocupando toda a largura da página e centralizado.
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>Box-model 2 </title>
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <style>
+            
+            div.boxmodel1 {
+                margin:10px;
+                width:35%;
+                height:auto;
+                border: 1px;
+                border-style: dotted;
+                border-color:blue;
+                padding: 5px;
+                background-color: rgba(173, 216, 230, 0.7);
+                color:blue;
+                font-weight: bold;
+                float:left;
+            }
+            div.boxmodel2{
+                margin:5px;
+                padding:5px;
+            }
+            div.clear{
+                clear:both;
+                width:100%;
+                text-align:center;
+            }
+            body {
+                background-image: url(./imagens/hamster.jfif);
+            }
+        </style>
+    </head>
+    <body>
+        <h2  style="text-align: center;" class="tipo2">Formulário CSS: Box Model</h2>
+        <div style="margin-left: 170px;" class="boxmodel1">
+                
+            <form id="form1" action="#" method="post">
+                
+                <div id="div1" class="boxmodel2">
+                    <label for="nome">Nome completo: </label>
+                    <input id="nome" type="text" name="nome">
+                </div>
+        
+                <div id="div2" class="boxmodel2">
+                    <label for="data">Data e hora de nascimento: </label>
+                    <input id="data" type="datetime-local" name="data">
+                </div>
+        
+                <div id="div3" class="boxmodel2">
+                    <label for="select1">Qual a sua altura? </label>
+                    <select id="select1" name="altura">
+                        <option value="">--Escolha uma opção--</option>
+                        <option value="150-">Menos de 1,50m</option>
+                        <option value="150">1,50m - 1,59m</option>
+                        <option value="160">1,60m - 1,69m</option>
+                        <option value="170">1,70m - 1,79m</option>
+                        <option value="180">1,80m - 1,89m</option>
+                        <option value="190">1,90m ou mais</option>
+                    </select>
+                </div>
+                <div id="div4" class="boxmodel2">
+                    <label for="select2">Qual seu peso? </label>
+                    <select id="select2" name="peso">
+                        <option value="">--Escolha uma opção--</option>
+                        <option value="50-">Menos de 50kg</option>
+                        <option value="50">50kg - 59kg</option>
+                        <option value="60">60kg - 69kg</option>
+                        <option value="70">70kg - 79kg</option>
+                        <option value="80">80kg - 89kg</option>
+                        <option value="90">90kg ou mais</option>
+                    </select>
+                </div>
+                <div id="div5" class="boxmodel2">
+                    <label for="check">Você respondeu o formulário até aqui?</label>
+                    <input id="check" type="checkbox" name="check">
+                </div>
+            </form>
+        </div>
+        
+        <div class="boxmodel1">
+                
+            <form id="form2" action="#" method="post">
+                        
+                    <div id="div6" class="boxmodel2">
+                        <label for="selectx">Você já programou?</label>
+                        <select id="selectx" name="prog">
+                            <option value="">---</option>
+                            <option value="yes">Sim</option>
+                            <option value="no">Não</option>
+                        </select>
+
+                    </div>
+                
+                    <div id="div7" class="boxmodel2">
+                        <label for="selectxx">Você gosta de programar?</label>
+                        <select id="selectxx" name="gostou">
+                            <option value="">---</option>
+                            <option value="yes">Sim</option>
+                            <option value="no">Não</option>
+                        </select>
+                    </div>
+                
+                    <div id="div8" class="boxmodel2">
+                        <label for="linguagem">Qual a sua linguagem preferida? </label>
+                        <input id="linguagem" type="text">
+                          
+                    </div>
+                    <div id="div9" class="boxmodel2">
+                        <label for="select4">Qual sua idade? </label>
+                        <select id="select4" name="peso">
+                            <option value="">--Escolha uma opção--</option>
+                            <option value="10-">Menos de 10 anos</option>
+                            <option value="10">10 a 15 anos</option>
+                            <option value="16">16 a 20 anos</option>
+                            <option value="21">21 a 30 anos</option>
+                            <option value="31">Mais de 30 anos</option>
+                        </select>
+                    </div>
+                    <div id="div10" class="boxmodel2">
+                        <label for="check">Você preencheu o formulário completo?</label>
+                        <input id="check" type="checkbox" name="check">
+                    </div> 
+            </form>
+        </div>
+        <div class="clear">
+            <label for="submit">Feito!</label>
+            <input id="submit" type="submit" name="submit">
+        </div>                  
+    </body>
+</html>

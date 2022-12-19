@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <!--10) Códifique uma página em HTML contendo cabeçalho, corpo e rodapé. 
+        No cabeçalho defina um título. No corpo um formulário para representar um cadastro de
+        jogadores de futebol em um clube de amador. Portanto, defina os campos necessários, considerando
+        os dados cadastrais/documentais, endereço, esportivos e histórico. Aplique os recursos de html e css
+        desenvolvidos nos exemplos e exercícios anteriores.
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>ex10 B)</title>
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <style>
+            .boxmodel1 {
+                box-sizing: border-box;
+                margin-left: 350px;
+                width:40%;
+                height:auto;
+                border: 1px;
+                border-style: dotted;
+                border-color:black;
+                padding: 5px;
+                background-color: rgba(215, 61, 18, 0.7);
+                color: black;
+                font-weight: bold;
+                float:left;
+            }
+            .boxmodel2{
+                margin:5px;
+                padding:5px;
+            }
+            .clear{
+                clear:both;
+                width:100%;
+                text-align:center;
+            }
+            body{
+                background-image: url(./imagens/images.jfif);
+            }
+        </style>
+        <body>
+            <div class="boxmodel1">
+                <h1 style="text-align: center;" class="tipo3">Cadastro de Jogadores: </h1>
+            </div>
+            <div  style="padding-left: 70px;"class="boxmodel1">
+                <form id="form1" action="#" method="post">
+                
+                    <div id="div1" class="boxmodel2">
+                        <label for="nome">Nome completo: </label>
+                        <input id="nome" type="text" name="nome">
+                    </div>
+            
+                    <div id="div2" class="boxmodel2">
+                        <label for="data">Data de nascimento: </label>
+                        <input id="data" type="date" name="data">
+                    </div>
+
+                    <div id="div3" class="boxmodel2">
+                        <label for="id">Número do CPF: </label>
+                        <input id="id" type="text" name="id">
+                    </div>
+
+                    <div id="div4" class="boxmodel2">
+                        <label for="en">Endereço: : </label>
+                        <input id="en" type="text" name="en">
+                    </div>
+
+                    <div id="div5" class="boxmodel2">
+                        <label for="he">Histórico esportivo: </label>
+                        <input id="he" type="text" name="he">
+                    </div>
+                </form>
+            </div>
+
+        </body>
+    </head>
+</html>

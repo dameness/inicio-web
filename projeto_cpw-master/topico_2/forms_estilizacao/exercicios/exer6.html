@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <!-- 6) Códifique uma página em HTML contendo cabeçalho, corpo e rodapé. 
+        No cabeçalho defina um título. No corpo um formulário que deverá ter 
+        no mínimo cinco campos para preenchimento (text, checkbox, select, etc.) 
+        e um botão. Agrupe os conjuntos label+input em um div.
+        Para a estilização utilize a tag style e seletores através do id.
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>CPW - Exercício 6</title>
+        <style>
+            #h2 {
+                color:lightcoral;
+            }
+            .estilo1
+            {
+                text-align:center;
+                font-size:30px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .estilo2
+            {
+                color: blue;
+                text-align:center;
+                font-size:20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-decoration: underline;
+                text-decoration-color: blueviolet;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        
+        <div id="h2" class="estilo1">
+        
+            <h4>Formulário para testar o CSS 1</h4>
+        
+        </div>
+        
+        <form id="form" action="#" method="post">
+            
+            <div id="div1" class="estilo1">
+                <label for="nome">Nome completo: </label>
+                <input id="nome" type="text" name="nome">
+            </div>
+
+            <div id="div2" class="estilo1">
+                <label for="data">Data e hora de nascimento: </label>
+                <input id="data" type="datetime-local" name="data">
+            </div>
+
+            <div id="div3" class="estilo1">
+                <label for="select1">Qual a sua altura? </label>
+                <select id="select1" name="altura">
+                    <option value="">--Escolha uma opção--</option>
+                    <option value="150-">Menos de 1,50m</option>
+                    <option value="150">1,50m - 1,59m</option>
+                    <option value="160">1,60m - 1,69m</option>
+                    <option value="170">1,70m - 1,79m</option>
+                    <option value="180">1,80m - 1,89m</option>
+                    <option value="190">1,90m ou mais</option>
+                </select>
+            </div>
+            <div id="div4" class="estilo1">
+                <label for="select2">Qual seu peso? </label>
+                <select id="select2" name="peso">
+                    <option value="">--Escolha uma opção--</option>
+                    <option value="50-">Menos de 50kg</option>
+                    <option value="50">50kg - 59kg</option>
+                    <option value="60">60kg - 69kg</option>
+                    <option value="70">70kg - 79kg</option>
+                    <option value="80">80kg - 89kg</option>
+                    <option value="90">90kg ou mais</option>
+                </select>
+            </div>
+            <div id="div5" class="estilo1">
+                <label for="check">Você preencheu o formulário completo?</label>
+                <input id="check" type="checkbox" name="check">
+            </div>
+        </form>
+    
+    </body>    
+    <footer>
+        <p class="estilo2"> Obrigado pela atenção! </p>
+    </footer> 
+</html>

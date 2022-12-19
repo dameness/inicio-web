@@ -1,0 +1,60 @@
+.fonte
+{
+    font-size: 30px;
+    text-indent: 3ch;
+}
+.divstyle
+{
+    text-align:center;
+    font-size:35px;
+    font-weight: 100;
+    font-family: "Papyrus", fantasy;
+}
+.divstyle2
+{
+    text-align:center;
+    font-size:20px;
+    font-weight: 100;
+    font-family: "Papyrus", fantasy;
+    text-decoration: underline;
+    color:brown;
+}
+.tipo1
+{
+    text-align:center;
+    font-family:"Papyrus", fantasy;
+    color:brown;
+}
+.tipo2
+{
+    text-align:left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:blue;
+}
+.tipo3
+{
+    text-align:center;
+    font-family: cursive;
+}
+.boxmodel1 {
+    margin:10px;
+    width:35%;
+    height:auto;
+    border: 1px;
+    border-style: dotted;
+    border-color:blue;
+    padding: 5px;
+    background-color: rgba(173, 216, 230, 0.7);
+    color:blue;
+    font-weight: bold;
+    float:left;
+}
+.boxmodel2{
+    margin:5px;
+    padding:5px;
+}
+.clear{
+    clear:both;
+    width:100%;
+    text-align:center;
+}

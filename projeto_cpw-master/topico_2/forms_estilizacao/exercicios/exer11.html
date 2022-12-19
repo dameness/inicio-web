@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <!-- 
+
+Tela de Autenticação
+
+➢ Criar uma tela de login, utilizando form, divs, boxmodel e botões “Acessar” e “Limpar Campos”.
+
+> Essa tela deverá apresentar um caixa com borda no centro da tela. Dentro, deverá ter dois campos
+  para e-mail, senha e botões.
+
+➢ O botão “Acessar” deverá ser um botão de envio, o qual deve mostrar uma mensagem de “Acesso
+permitido”;
+➢ O botão “Limpar Campos” deverá limpar o conteúdo dos campos de texto, sem enviar o
+formulário.
+
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 11</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <style>
+            .boxmodel1 {
+                box-sizing: border-box;
+                width:40%;
+                border: 1px;
+                border-style: dotted;
+                border-color:black;
+                padding: 5px;
+                background-color: rgba(168, 47, 127, 0.7);
+                color: black;
+                font-weight: bold;
+                float:left;
+            }
+            .boxmodel2{
+                margin:5px;
+                padding:5px;
+            }
+            .clear{
+                clear:both;
+                width:100%;
+                text-align:center;
+            }
+            .container
+            {
+              box-sizing: border-box;
+              display:flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(0, 0, 0, 0.85);
+            }
+          </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="boxmodel1">
+          <h1 style="text-align: center;" class="tipo3">Tela de Autenticação: </h1>
+      </div>
+      <div class="boxmodel1">
+          <form id="form1" action="#" method="get">
+          
+              <div id="div1" class="boxmodel2">
+                  <label for="nome">Usuário: </label>
+                  <input id="nome" type="text" name="nome">
+              </div>
+      
+              <div id="div2" class="boxmodel2">
+                  <label for="password">Senha: </label>
+                  <input id="password" type="password" name="password">
+              </div>
+
+              <div style="clear:both"id="div6" class="boxmodel2"></div>
+              <div id="div4" class="boxmodel2">
+                  <input id="en" type="submit" name="en" value="Acessar">
+              </div>
+              
+              <div id="div5" class="boxmodel2">
+                  <input id="he" type="Submit" name="he" value="Limpar Campos">
+              </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+
+    $("#en").click(function(){
+
+      alert("Acesso permitido!")
+    })
+
+    $("#he").click(function(){
+
+      document.getElementById("nome").value="";
+      document.getElementById("password").value=""
+    })
+
+
+
+
+  </script>
+</html>
+
+
+

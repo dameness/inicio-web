@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <title>CPW 25/08 - Bernardo Damiani</title> 
+        <style>p {color: #993399}</style>
+    </head>
+    <h1>Listagem de tags HTML</h1>
+    <body>
+        <ul>
+            <li><strong>&lt;style&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e/ou MDN o significado desta tag -->
+                        <p>contém informações de estilo para um documento ou uma parte do documento. As informações de estilo específico estão contidas dentro deste elemento, geralmente no CSS. Deve estar contido na head do documento html, mas também pode definir a cor específica de um parágrafo.</p>
+                        <p style="color: blue"></style>Por exemplo, o texto está estilizado em roxo com essa tag, mas esse parágrafo está em azul.</p>
+            <li><strong>&lt;label&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e/ou MDN o significado desta tag -->
+                        <p>representa uma legenda para um item em uma interface de usuário. Ele pode estar associado com um elemento de controle, colocando este dentro do elemento label, ou usando o atributo for. Tal controle é chamado o controle etiquetado do elemento etiqueta. Um input pode ser associado a diversas etiquetas (labels).</p>
+            <li><strong>&lt;input&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e MDN o significado desta tag  e incluir um exemplo -->
+                        <p>é usado para receber dados de um usuário, e é complexo pois tem diversos atributos, pode ser inserido um botão para click ou uma checkbox, por exemplo.</p>
+                        <p style="color: blue"></style>Exemplo de input e label:
+                            <div class="preference">
+                                <label for="Refrigerante"></label>Marque se você gosta de refrigerante.</label>
+                                <input type="checkbox" name="Refrigerante" id="Refrigerante">
+                            </div>
+                            <div class="preference">
+                                <label for="Suco"></label>Marque se você gosta de suco.</label>
+                                <input type="checkbox" name="Suco" id="Suco">
+                            </div>
+                        </p>
+            <li><strong>&lt;i&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e/ou MDN o significado desta tag -->
+                        <P>representa uma parte do texto que é destacada do restante por algum motivo, por exemplo, termos técnicos, expressões de outros idiomas ou pensamentos de personagens fictícios. Normalmente, é apresentado com o uso do tipo "itálico". <i>Desse jeito.</i></P>
+            <li><strong>&lt;strong&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e/ou MDN o significado desta tag -->
+                        <p>dá ao texto uma forte importância, e é tipicamente mostrado em negrito. O exemplo está nos títulos das seções de conteúdo.</p>
+            <li><strong>&lt;small&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e/ou MDN o significado desta tag -->
+                        <p>representa comentários secundários em uma letra menor, é usado, por exemplo, em textos de copyright.</p>
+                        <hr>
+                        <p><small>O comando fica dessa forma, e essa linha acima é criada com &lt;hr&gt;</small></p>
+            <li><strong>&lt;br&gt;</strong></li><!-- Atividade: pesquisar na documentacação do W3C e/ou MDN o significado desta tag -->
+                        <p>Produz uma quebra de linha no texto<br>Dessa forma,<br>É como em poesias
+                        </p>
+            <li><strong>&lt;img&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e MDN o significado desta tag  e incluir um exemplo -->                         
+                        <p>insere uma imagem.</p>
+                        <img src="aaa.png" width="200" height="150">
+            <li><strong>&lt;audio&gt;</strong></li>
+                        <p>insere áudio, o qual pode ter uma ou mais de uma fonte, representada pelo atributo src ou pelo elemento &lt;source&gt;, também pode ser usado como mediastream.<br><i>O PC do if não tem microfone mas é mais ou menos assim:</i></p>
+                        <img src="img.png" width="400" height="400">
+
+            <li><strong>&lt;canvas&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e MDN o significado desta tag  e incluir um exemplo -->
+                        <p>usado para desenhar gráficos e animações, disponibiliza um espaço como o que está abaixo.</p>
+                        <canvas width="300" height="300"></canvas>
+            <li><strong>&lt;datalist&gt;</strong></li> <!-- Atividade: pesquisar na documentacação do W3C e MDN o significado desta tag  e incluir um exemplo -->
+                        <p>representa uma série de opções para o usuário escolher e o sistema registrar. Precisa vir acompanhado de uma label e um input.</p>
+                        <p>
+                            <div>
+                                <label for="escolha-salgadinho">Escolha um salgadinho:</label>
+                                <input list="tipo-salgadinho" id="escolha-salgadinho" name="escolha-salgadinho">
+                                    <datalist id="tipo-salgadinho">
+                                        <option value="Coxinha"></option>
+                                        <option value="Dogão"></option>
+                                        <option value="Pastel"></option>
+                                    </datalist>
+
+                            </div>
+                            
+                        </p>
+                    
+        
+        
+            </ul>
+
+
+    </body>
